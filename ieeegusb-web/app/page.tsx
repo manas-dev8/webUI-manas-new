@@ -96,7 +96,7 @@ export default function Home() {
     <div className="relative min-h-screen flex items-center justify-center">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
       <div className="relative z-10 text-center">
-        <img src="/ieee-logo.png" alt="IEEE Logo" className="mx-auto mb-8 w-32" />
+        <img src="https://res.cloudinary.com/anurag256k/image/upload/v1735503028/IEEE/ieee-logo_ufoyaw.png" alt="IEEE Logo" className="mx-auto mb-8 w-32" />
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
           IEEE Student Branch
         </h1>

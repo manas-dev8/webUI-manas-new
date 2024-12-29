@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <img className="h-8 w-auto" src="/ieee-logo.png" alt="IEEE Logo" />
+              <img className="h-8 w-auto" src="https://res.cloudinary.com/anurag256k/image/upload/v1735503028/IEEE/ieee-logo_ufoyaw.png" alt="IEEE Logo" />
             </Link>
           </div>
           <div className="hidden md:block">
