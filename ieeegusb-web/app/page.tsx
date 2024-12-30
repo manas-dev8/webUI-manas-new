@@ -2,8 +2,31 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { FlipWords } from "@/components/ui/flip-words";
+// import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 export default function Home() {
+  const words = [
+    "better",
+    "Inclusive",
+    "beautiful",
+    "modern",
+    "Dynamic",
+    "Diverse",
+    "Innovative",
+    "Creative",
+    "Inspiring",
+    "Empowering",
+    "Impactful",
+    "Sustainable",
+    "Accessible",
+    "Engaging",
+    "Interactive",
+    "Responsible",
+    "Intuitive",
+    "Reliable",
+  ];
+
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -95,6 +118,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+
       <div className="relative z-10 text-center">
         <img
           src="https://res.cloudinary.com/anurag256k/image/upload/v1735503028/IEEE/ieee-logo_ufoyaw.png"
@@ -113,6 +137,11 @@ export default function Home() {
         >
           Explore More
         </Link>
+        <div className="text-4xl mx-auto pl-12 pt-5 font-semibold text-neutral-600 dark:text-neutral-400">
+          Join a
+          <FlipWords words={words} /> <br />
+          Technology and Research Community.
+        </div>
       </div>
     </div>
   );
