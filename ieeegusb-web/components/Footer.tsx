@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Twitter, Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -75,10 +75,6 @@ export default function Footer() {
               Connect With Us
             </h3>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-gray-500">
-                <span className="sr-only">Facebook</span>
-                <Facebook className="h-6 w-6" />
-              </a>
               <a href="#" className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-6 w-6" />
