@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center md:items-start">
-            <img className="h-10 w-auto mb-4" src="/ieee-logo.png" alt="IEEE Logo" />
+            <img className="h-10 w-auto mb-4" src="https://res.cloudinary.com/anurag256k/image/upload/v1735503028/IEEE/ieee-logo_ufoyaw.png" alt="IEEE Logo" />
             <p className="text-sm text-gray-500">
               © {new Date().getFullYear()} IEEE Student Branch, Galgotias University
             </p>
