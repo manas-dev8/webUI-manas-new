@@ -79,11 +79,11 @@ export default function Footer() {
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-500">
+              <a href="https://www.linkedin.com/company/ieee-gu/" className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">LinkedIn</span>
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-500">
+              <a href="https://www.instagram.com/ieee_gusb/" className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">Instagram</span>
                 <Instagram className="h-6 w-6" />
               </a>
