@@ -8,11 +8,11 @@ const navItems = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Events", href: "/events" },
-  { name: "Conferences", href: "/confs" },
-  { name: "Projects", href: "/projects" },
+  { name: "Conferences", href: "/conferences" },
+  // { name: "Projects", href: "/projects" },
   { name: "Team", href: "/team" },
   { name: "Join Us", href: "/join" },
-  { name: "Contact", href: "/contact" },
+  // { name: "Contact", href: "/contact" },
   { name: "SDG", href: "/sdg" },
 ];
 
