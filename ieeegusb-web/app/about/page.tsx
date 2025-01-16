@@ -38,7 +38,7 @@ export default function AboutIEEE() {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-6 animate-fade-in-left">
             <p className="text-lg">
-              IEEE (Institute of Electrical and Electronics Engineers) is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+              IEEE (Institute of Electrical and Electronics Engineers) is the world&apos;s largest technical professional organization dedicated to advancing technology for the benefit of humanity.
             </p>
             <p className="text-lg">
               At Galgotias University, the IEEE Student Branch provides a platform for students to enhance their technical skills, network with professionals, and contribute to technological advancements.
@@ -53,7 +53,7 @@ export default function AboutIEEE() {
               <li>Industry expert talks and panel discussions</li>
               <li>Project development opportunities</li>
               <li>Networking events with professionals</li>
-              <li>Access to IEEE's vast digital library</li>
+              <li>Access to IEEE&apos;s vast digital library</li>
             </ul>
             <div className="flex space-x-4 mt-6">
                 <Button className="transition-all duration-300 hover:scale-105 bg-black text-white hover:text-black">Join IEEE Galgotias</Button>

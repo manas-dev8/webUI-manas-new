@@ -134,13 +134,13 @@ export default function TeamsPage() {
       
       <main className="container mx-auto px-4 py-16 pt-24">
         <h1 className="text-4xl font-bold text-center text-blue-900 mb-12">Our Team</h1>
-        <Tabs defaultValue="board" className="w-full">
+        <Tabs defaultValue="board" className="w-auto mx-auto">
           <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 bg-blue-100 rounded-xl p-1 mb-8">
             <TabsTrigger value="board" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Board</TabsTrigger>
-            <TabsTrigger value="executive" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Executive</TabsTrigger>
-            <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Sub-Community A</TabsTrigger>
-            <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Sub-Community B</TabsTrigger>
-            <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Sub-Community C</TabsTrigger>
+            <TabsTrigger value="executive" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">ExComm</TabsTrigger>
+            <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Computer Society</TabsTrigger>
+            <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Industry Applications Society</TabsTrigger>
+            <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Women in Engineering</TabsTrigger>
           </TabsList>
           <TabsContent value="board">
             <h2 className="text-2xl font-semibold text-blue-900 mb-6">Board Team</h2>
@@ -151,15 +151,15 @@ export default function TeamsPage() {
             <TeamGrid members={executiveCommittee} />
           </TabsContent>
           <TabsContent value="subA">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Sub-Community A</h2>
+            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Computer Society</h2>
             <TeamGrid members={subCommunityA} />
           </TabsContent>
           <TabsContent value="subB">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Sub-Community B</h2>
+            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Industry Applications Society</h2>
             <TeamGrid members={subCommunityB} />
           </TabsContent>
           <TabsContent value="subC">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Sub-Community C</h2>
+            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Women in Engineering</h2>
             <TeamGrid members={subCommunityC} />
           </TabsContent>
         </Tabs>
