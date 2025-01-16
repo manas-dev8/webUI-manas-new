@@ -16,8 +16,36 @@ interface TeamMember {
 
 const boardMembers: TeamMember[] = [
   {
-    name: "John Doe",
+    name: "Shubhranshu Shekhar Das",
     role: "Chairperson",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Anurag Kumar Singh",
+    role: "Vice Chairperson",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "aunragkumarsingh@ieee.org"
+  },
+  {
+    name: "Rashi Bajpai",
+    role: "General Sceretary",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Manas Saxsena",
+    role: "Tech Lead (Web Master)",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Siddarth Aggarwal",
+    role: "Treasurer in General",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
     email: "john.doe@ieee.org"
@@ -135,7 +163,7 @@ export default function TeamsPage() {
       <main className="container mx-auto px-4 py-16 pt-24">
         <h1 className="text-4xl font-bold text-center text-blue-900 mb-12">Our Team</h1>
         <Tabs defaultValue="board" className="w-auto mx-auto">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 bg-blue-100 rounded-xl p-1 mb-8">
+          <TabsList className="grid w-auto grid-cols-2 md:grid-cols-5 bg-blue-100 rounded-xl p-1 mb-8">
             <TabsTrigger value="board" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Board</TabsTrigger>
             <TabsTrigger value="executive" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">ExComm</TabsTrigger>
             <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Computer Society</TabsTrigger>
