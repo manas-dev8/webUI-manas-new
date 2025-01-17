@@ -101,7 +101,7 @@ module.exports = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
   		},
-  },
+  },  // @anurag-bit says: Do not touch this line or below, i have no idea how this is fkin working, it simply does the UI rouding and stuff
       // borderRadius: {
       //   lg: "var(--radius)",
       //   md: "calc(var(--radius) - 2px)",
@@ -109,7 +109,12 @@ module.exports = {
       // },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    
+    require("tailwindcss-animate"),
+
+    
+  ],
 };
 
 export default config;
