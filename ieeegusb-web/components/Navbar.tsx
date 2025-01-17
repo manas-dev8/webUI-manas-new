@@ -15,7 +15,7 @@ const navItems = [
   // { name: "Societies", href: "/societies" },
   { name: "Team", href: "/team" },
   { name: "Join Us", href: "/join" },
-  { name: "SDG", href: "/sdg" },
+  { name: "SDG", href: "https://sdgs.un.org/goals" },
 ];
 
 export default function Navbar() {
