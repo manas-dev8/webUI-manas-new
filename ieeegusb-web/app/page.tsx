@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
 // import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import FeaturesSectionDemo from "@/components/ui/feature";
 
 export default function Home() {
   const words = [
@@ -116,15 +117,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
+    <><div className="relative min-h-screen flex  items-center justify-center">
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
       <div className="relative z-10 text-center">
         <img
           src="https://res.cloudinary.com/anurag256k/image/upload/v1735503028/IEEE/ieee-logo_ufoyaw.png"
           alt="IEEE Logo"
-          className="mx-auto h-30 mb-8 w-auto"
-        />
+          className="mx-auto h-30 mb-8 w-auto" />
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
           IEEE Student Branch
         </h1>
@@ -143,6 +143,7 @@ export default function Home() {
           Technology and Research Community.
         </div>
       </div>
-    </div>
+    </div><FeaturesSectionDemo /></>
+
   );
 }

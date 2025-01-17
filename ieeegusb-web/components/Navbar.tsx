@@ -3,16 +3,18 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { Button } from "./ui/button";
 
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
+  { name: "Awards", href: "/awards" },
   { name: "Events", href: "/events" },
   { name: "Conferences", href: "/conferences" },
-  // { name: "Projects", href: "/projects" },
+  // { name: "Societies", href: "/societies" },
   { name: "Team", href: "/team" },
   { name: "Join Us", href: "/join" },
-  // { name: "Contact", href: "/contact" },
   { name: "SDG", href: "/sdg" },
 ];
 
@@ -30,9 +32,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/70 backdrop-blur-md shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/70 backdrop-blur-md shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -56,8 +57,64 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button className="transition-all duration-300 hover:scale-105 bg-transparent text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56">
+                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuGroup>
+                    <DropdownMenuItem>
+                      Profile
+                      <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      Billing
+                      <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      Settings
+                      <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      Keyboard shortcuts
+                      <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                    </DropdownMenuItem>
+                  </DropdownMenuGroup>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuGroup>
+                    <DropdownMenuItem>Team</DropdownMenuItem>
+                    <DropdownMenuSub>
+                      <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
+                      <DropdownMenuPortal>
+                        <DropdownMenuSubContent>
+                          <DropdownMenuItem>Email</DropdownMenuItem>
+                          <DropdownMenuItem>Message</DropdownMenuItem>
+                          <DropdownMenuSeparator />
+                          <DropdownMenuItem>More...</DropdownMenuItem>
+                        </DropdownMenuSubContent>
+                      </DropdownMenuPortal>
+                    </DropdownMenuSub>
+                    <DropdownMenuItem>
+                      New Team
+                      <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
+                    </DropdownMenuItem>
+                  </DropdownMenuGroup>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem>GitHub</DropdownMenuItem>
+                  <DropdownMenuItem>Support</DropdownMenuItem>
+                  <DropdownMenuItem disabled>API</DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem>
+                    Log out
+                    <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
+
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
