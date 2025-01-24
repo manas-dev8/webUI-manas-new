@@ -59,23 +59,28 @@ export default function Navbar() {
               ))}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button className="transition-all duration-300 hover:scale-105 bg-zinc-900 text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
+                  <Button className="transition-all duration-300 hover:scale-105 bg-zinc-300 text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
                   <DropdownMenuLabel>OUR SOCIETIES</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   <DropdownMenuGroup>
-                    <DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link href="/cs">
                       IEEE Computer Society
-
+                      </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      IEEE Industry Applications Society
-
+                      {/* IEEE Industry Applications Society */}
+                      <Link href="/ias">
+                      IEEE Computer Society
+                      </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
+                      {/* IEEE  */}
+                      <Link href="/wie">
                       IEEE Women in Engineering
-
+                      </Link>
                     </DropdownMenuItem>
                   </DropdownMenuGroup>
 
