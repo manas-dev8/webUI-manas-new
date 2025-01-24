@@ -59,7 +59,7 @@ export default function Navbar() {
               ))}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button className="transition-all duration-300 hover:scale-105 bg-transparent text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
+                  <Button className="transition-all duration-300 hover:scale-105 bg-zinc-900 text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
                   <DropdownMenuLabel>OUR SOCIETIES</DropdownMenuLabel>
