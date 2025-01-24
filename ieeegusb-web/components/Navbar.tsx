@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator,    DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 
 const navItems = [
@@ -67,19 +67,19 @@ export default function Navbar() {
                   <DropdownMenuGroup>
                     <DropdownMenuItem>
                       IEEE Computer Society
-                      
+
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                       IEEE Industry Applications Society
-                      
+
                     </DropdownMenuItem>
                     <DropdownMenuItem>
                       IEEE Women in Engineering
-                     
-                    </DropdownMenuItem> 
+
+                    </DropdownMenuItem>
                   </DropdownMenuGroup>
-            
-                  
+
+
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
