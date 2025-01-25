@@ -48,6 +48,7 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
+              //here is desktop nav
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -73,7 +74,7 @@ export default function Navbar() {
                     <DropdownMenuItem>
                       {/* IEEE Industry Applications Society */}
                       <Link href="/ias">
-                      IEEE Computer Society
+                      IEEE Industry Applications Society
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
@@ -125,7 +126,7 @@ export default function Navbar() {
                     <DropdownMenuItem>
                       {/* IEEE Industry Applications Society */}
                       <Link href="/ias">
-                      IEEE Computer Society
+                      IEEE Industry Applications Society
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
