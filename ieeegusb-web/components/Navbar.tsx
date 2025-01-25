@@ -109,6 +109,36 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button className="transition-all duration-300 hover:scale-105 bg-zinc-300 text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56">
+                  <DropdownMenuLabel>OUR SOCIETIES</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuGroup>
+                    <DropdownMenuItem asChild>
+                      <Link href="/cs">
+                      IEEE Computer Society
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      {/* IEEE Industry Applications Society */}
+                      <Link href="/ias">
+                      IEEE Computer Society
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      {/* IEEE  */}
+                      <Link href="/wie">
+                      IEEE Women in Engineering
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuGroup>
+
+
+                </DropdownMenuContent>
+              </DropdownMenu>
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -118,6 +148,7 @@ export default function Navbar() {
               >
                 {item.name}
               </Link>
+              //here is mobile nav  (dropdown)
             ))}
           </div>
         </div>
