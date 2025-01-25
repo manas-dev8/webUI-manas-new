@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator,    DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 
 const navItems = [
@@ -15,7 +15,7 @@ const navItems = [
   // { name: "Societies", href: "/societies" },
   { name: "Team", href: "/team" },
   { name: "Join Us", href: "/join" },
-  { name: "SDG", href: "/sdg" },
+  { name: "SDG", href: "https://sdgs.un.org/goals" },
 ];
 
 export default function Navbar() {
@@ -59,57 +59,32 @@ export default function Navbar() {
               ))}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button className="transition-all duration-300 hover:scale-105 bg-transparent text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
+                  <Button className="transition-all duration-300 hover:scale-105 bg-zinc-300 text-black hover:bg-blue-100 hover:text-blue-900">Societies</Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
-                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                  <DropdownMenuLabel>OUR SOCIETIES</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   <DropdownMenuGroup>
-                    <DropdownMenuItem>
-                      Profile
-                      <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                    <DropdownMenuItem asChild>
+                      <Link href="/cs">
+                      IEEE Computer Society
+                      </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      Billing
-                      <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                      {/* IEEE Industry Applications Society */}
+                      <Link href="/ias">
+                      IEEE Computer Society
+                      </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem>
-                      Settings
-                      <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      Keyboard shortcuts
-                      <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-                    </DropdownMenuItem>
-                  </DropdownMenuGroup>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuGroup>
-                    <DropdownMenuItem>Team</DropdownMenuItem>
-                    <DropdownMenuSub>
-                      <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
-                      <DropdownMenuPortal>
-                        <DropdownMenuSubContent>
-                          <DropdownMenuItem>Email</DropdownMenuItem>
-                          <DropdownMenuItem>Message</DropdownMenuItem>
-                          <DropdownMenuSeparator />
-                          <DropdownMenuItem>More...</DropdownMenuItem>
-                        </DropdownMenuSubContent>
-                      </DropdownMenuPortal>
-                    </DropdownMenuSub>
-                    <DropdownMenuItem>
-                      New Team
-                      <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
+                      {/* IEEE  */}
+                      <Link href="/wie">
+                      IEEE Women in Engineering
+                      </Link>
                     </DropdownMenuItem>
                   </DropdownMenuGroup>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>GitHub</DropdownMenuItem>
-                  <DropdownMenuItem>Support</DropdownMenuItem>
-                  <DropdownMenuItem disabled>API</DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    Log out
-                    <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-                  </DropdownMenuItem>
+
+
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
