@@ -36,34 +36,31 @@ export default function ConferencesPage() {
             Flagship Conference
           </h2>
           <Card className="backdrop-blur-md bg-white/30 dark:bg-gray-800/30 shadow-lg rounded-xl overflow-hidden">
-            <div className="md:flex">
-              <div className="md:flex-shrink-0">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="ICCSAI 2025 Conference"
-                  width={400}
-                  height={300}
-                  className="h-48 w-full object-cover md:h-full md:w-48"
-                />
-              </div>
-              <div className="p-8">
-                <CardTitle className="uppercase tracking-wide text-sm text-blue-600 dark:text-blue-400 font-semibold">
-                  ICCSAI 2025
-                </CardTitle>
-                <Link href="#" className="block mt-1 text-lg leading-tight font-medium text-black dark:text-white hover:underline">
-                  International Conference on Computer Science and Artificial Intelligence
-                </Link>
-                <p className="mt-2 text-gray-600 dark:text-gray-400">
-                  Join us at Galgotias University for the premier conference on cutting-edge advancements in Computer Science and AI. ICCSAI 2025 brings together leading researchers, innovators, and industry experts.
-                </p>
-                <div className="mt-4">
-                  <Button className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600">
-                    Learn More
-                  </Button>
+              <div className="md:flex">
+                <div className="md:flex-shrink-0 w-full md:w-1/3">
+                  <Image
+                    src="https://res.cloudinary.com/dgna3swph/image/upload/t_Banner 16:9/v1737884727/df6cda3d-19f2-49f6-bd13-467f152d4af7_gbru5l.jpg"
+                    alt="Flagship Conference Banner"
+                    width={1280}
+                    height={733}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <CardHeader>
+                    <CardTitle className="text-xl font-semibold text-blue-700 dark:text-blue-300">IEEE GUSB 2023</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-gray-600 dark:text-gray-400">
+                      Details about the upcoming flagship conference.
+                    </CardDescription>
+                    <Link href="/conferences/flagship">
+                      <Button variant="default" className="mt-4">Learn More</Button>
+                    </Link>
+                  </CardContent>
                 </div>
               </div>
-            </div>
-          </Card>
+            </Card>
         </section>
 
         <section>
