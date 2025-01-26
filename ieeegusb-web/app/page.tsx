@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FlipWords } from "@/components/ui/flip-words";
 // import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import FeaturesSectionDemo from "@/components/ui/feature";
+import ScrollingBanner from "@/components/scrolling-banner";
 
 export default function Home() {
   const words = [
@@ -118,6 +119,7 @@ export default function Home() {
 
   return (
     <><div className="relative min-h-screen flex  items-center justify-center">
+     
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
 
       <div className="relative z-10 text-center">
@@ -143,7 +145,11 @@ export default function Home() {
           Technology and Research Community.
         </div>
       </div>
-    </div><FeaturesSectionDemo /></>
+      
+    </div>
+    <ScrollingBanner />
+    
+    <FeaturesSectionDemo /></>
 
   );
 }
