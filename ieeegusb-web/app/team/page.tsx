@@ -17,7 +17,7 @@ interface TeamMember {
 const patMembers: TeamMember[] = [
   {
     name: "Prof. Dr. Avadhesh kuamr",
-    role: "Vice chancellor",
+    role: "Vice",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
     email: "john.doe@ieee.org"
@@ -219,10 +219,10 @@ export default function TeamsPage() {
           <TabsList className="grid w-auto grid-cols-2 md:grid-cols-5 bg-blue-100 rounded-xl p-1 mb-8">
           <TabsTrigger value="PAT" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">PATRONS</TabsTrigger>
             <TabsTrigger value="board" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Board</TabsTrigger>
-            <TabsTrigger value="executive" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">ExComm</TabsTrigger>
-            <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">CS</TabsTrigger>
-            <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">IAS</TabsTrigger>
-            <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">WIE</TabsTrigger>
+            {/* <TabsTrigger value="executive" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">ExComm</TabsTrigger> */}
+            <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Computer Society</TabsTrigger>
+            <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Industry Applications Society</TabsTrigger>
+            <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Women in Engineering</TabsTrigger>
           </TabsList>
           <TabsContent value="PAT">
             <h2 className="text-2xl font-semibold text-blue-900 mb-6">PATRONS</h2>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { IconBrandYoutubeFilled } from "@tabler/icons-react";
+import { IconBrandInstagramFilled } from "@tabler/icons-react";
 import Link from "next/link";
 
 export default function FeaturesSectionDemo() {
@@ -25,9 +25,9 @@ export default function FeaturesSectionDemo() {
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Watch our AI on YouTube",
+      title: "Watch our AICSSYC 2024 HIGLIGHTS",
       description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+        "Click here to watch the highlights of AICSSYC 2024, the biggest national congress on higlights.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
@@ -44,7 +44,7 @@ export default function FeaturesSectionDemo() {
     <div className="relative z-20 py-10 bg-zinc-100 lg:py-40 max-w-7xl mx-auto">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of features
+          Packed with thousands of Oppurtunities
         </h4>
 
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
@@ -111,7 +111,7 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="https://res.cloudinary.com/dgna3swph/image/upload/c_crop,ar_9:16/v1737884370/IMG_1624_vjcw2f.heic"
+            src="https://res.cloudinary.com/dgna3swph/image/upload/c_crop,ar_9:16/v1737888463/IMG_1624_vjcw2f_ue1gh4.jpg"
             alt="header"
             width={800}
             height={800}
@@ -129,16 +129,18 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
     <Link
-      href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
+      href="https://www.instagram.com/reel/DBVSi5XSOiJ/?igsh=YjIxZGtneTgyaWxs"
       target="__blank"
       className="relative flex gap-10  h-full group/image"
     >
       <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
           {/* TODO */}
-          <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
+          <IconBrandInstagramFilled
+            className="h-20 w-20 absolute z-10 inset-0 m-auto  text-red-500"
+          />
           <Image
-            src="https://assets.aceternity.com/fireship.jpg"
+            src="https://res.cloudinary.com/dgna3swph/image/upload/v1737889513/IMG_1952_s6ss9m_jvkbjt.jpg"
             alt="header"
             width={800}
             height={800}
@@ -152,11 +154,13 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images = [
-    "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+   
+   "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
+   "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
+   "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
+   "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
+   "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
+   "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
   ];
 
   const imageVariants = {
@@ -218,6 +222,50 @@ export const SkeletonTwo = () => {
           </motion.div>
         ))}
       </div>
+      <div className="flex flex-row -ml-20">
+        {images.map((image, idx) => (
+          <motion.div
+            variants={imageVariants}
+            key={"images-first" + idx}
+            style={{
+              rotate: Math.random() * 20 - 10,
+            }}
+            whileHover="whileHover"
+            whileTap="whileTap"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+          >
+            <Image
+              src={image}
+              alt="bali images"
+              width="500"
+              height="500"
+              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+            />
+          </motion.div>
+        ))}
+      </div>
+      <div className="flex flex-row -ml-20">
+        {images.map((image, idx) => (
+          <motion.div
+            variants={imageVariants}
+            key={"images-first" + idx}
+            style={{
+              rotate: Math.random() * 20 - 10,
+            }}
+            whileHover="whileHover"
+            whileTap="whileTap"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+          >
+            <Image
+              src={image}
+              alt="bali images"
+              width="500"
+              height="500"
+              className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover flex-shrink-0"
+            />
+          </motion.div>
+        ))}
+      </div>
 
       <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent  h-full pointer-events-none" />
       <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-white dark:from-black  to-transparent h-full pointer-events-none" />
@@ -255,21 +303,21 @@ export const Globe = ({ className }: { className?: string }) => {
       markerColor: [1, 0, 0], // also light blue
       glowColor: [0,0.6, 0.8],  // darker blue highlight
       markers: [
-        { location: [37.7749, -122.4194], size: 0.03 }, // San Francisco
-        { location: [34.0522, -118.2437], size: 0.03 }, // Los Angeles
-        { location: [51.5074, -0.1278], size: 0.03 }, // London
-        { location: [48.8566, 2.3522], size: 0.03 }, // Paris
-        { location: [35.6895, 139.6917], size: 0.03 }, // Tokyo
+        { location: [37.7749, -122.4194], size: 0.05 }, // San Francisco
+        { location: [34.0522, -118.2437], size: 0.05 }, // Los Angeles
+        { location: [51.5074, -0.1278], size: 0.05 }, // London
+        { location: [48.8566, 2.3522], size: 0.05 }, // Paris
+        { location: [35.6895, 139.6917], size: 0.05 }, // Tokyo
         { location: [28.6139, 77.209], size: 0.09 }, // New Delhi
-        { location: [55.7558, 37.6173], size: 0.03 }, // Moscow
-        { location: [-33.8688, 151.2093], size: 0.03 }, // Sydney
-        { location: [40.7128, -74.006], size: 0.03 }, // New York
-        { location: [19.076, 72.8777], size: 0.03 }, // Mumbai
-        { location: [39.9042, 116.4074], size: 0.03 }, // Beijing
-        { location: [52.52, 13.4050], size: 0.03 }, // Berlin
-        { location: [41.9028, 12.4964], size: 0.03 }, // Rome
-        { location: [-23.5505, -46.6333], size: 0.03 }, // São Paulo
-        { location: [1.3521, 103.8198], size: 0.03 }, // Singapore
+        { location: [55.7558, 37.6173], size: 0.05 }, // Moscow
+        { location: [-33.8688, 151.2093], size: 0.05 }, // Sydney
+        { location: [40.7128, -74.006], size: 0.05 }, // New York
+        { location: [19.076, 72.8777], size: 0.05 }, // Mumbai
+        { location: [39.9042, 116.4074], size: 0.05 }, // Beijing
+        { location: [52.52, 13.4050], size: 0.05 }, // Berlin
+        { location: [41.9028, 12.4964], size: 0.05 }, // Rome
+        { location: [-23.5505, -46.6333], size: 0.05 }, // São Paulo
+        { location: [1.3521, 103.8198], size: 0.05 }, // Singapore
       ],
       onRender: (state) => {
       state.phi = phi;
