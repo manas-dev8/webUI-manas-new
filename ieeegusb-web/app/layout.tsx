@@ -21,6 +21,7 @@ import {
   ContextMenuSubTrigger,
   ContextMenuSubContent,
 } from "@/components/ui/context-menu";
+import ScrollingBanner from "@/components/scrolling-banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,7 +45,9 @@ export default function RootLayout({
         <ContextMenu>
           <ContextMenuTrigger>
             <Navbar />
+            
             <main className=" bg-zinc-100">{children}</main>
+            <ScrollingBanner />
             <Footer />
           </ContextMenuTrigger>
           <ContextMenuContent className="w-64 bg-gradient-to-br from-[#f0f8ff] to-[#e6f3ff] text-[#005580] rounded-lg shadow-lg relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9IjAuMDUiPjwvcmVjdD4KPC9zdmc+')] before:opacity-30">

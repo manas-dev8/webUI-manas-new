@@ -30,6 +30,7 @@ module.exports = {
         "fade-in-up": "fade-in-up 0.5s ease-out",
         "fade-in-left": "fade-in-left 0.5s ease-out",
         "fade-in-right": "fade-in-right 0.5s ease-out",
+        'scroll-x': 'scroll-x 20s linear infinite',
       },
       keyframes: {
         moveHorizontal: {
@@ -58,7 +59,11 @@ module.exports = {
         "fade-in-right": {
           "0%": { opacity: "0", transform: "translateX(10px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
-  				},
+  				 },
+        'scroll-x': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
   			},
   		colors: {
         background: "hsl(var(--background))",

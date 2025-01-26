@@ -15,7 +15,7 @@ body {
   background: linear-gradient(
     to bottom right,
     var(--ieee-light-blue),
-    var(--ieee-teal)
+    var (--ieee-teal)
   );
 }
 
@@ -27,5 +27,18 @@ body {
 .neumorphic-inset {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
               inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 15s ease-in-out infinite;
 }
 
