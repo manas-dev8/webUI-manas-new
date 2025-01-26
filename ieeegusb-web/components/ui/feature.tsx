@@ -111,7 +111,7 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="/linear.webp"
+            src="https://res.cloudinary.com/dgna3swph/image/upload/c_crop,ar_9:16/v1737884370/IMG_1624_vjcw2f.heic"
             alt="header"
             width={800}
             height={800}
@@ -247,34 +247,31 @@ export const Globe = ({ className }: { className?: string }) => {
       height: 600 * 2,
       phi: 0,
       theta: 0,
-      dark: 1.0,
+      dark: 0.0,
       diffuse: 1.2,
       mapSamples: 16000,
       mapBrightness: 6,
-      baseColor: [0.0, 0.0, 0.5],
-      markerColor: [0.1, 0.8, 1],
-      glowColor: [1, 1, 1],
+      baseColor: [0.53, 0.81, 1], // light blue
+      markerColor: [1, 0, 0], // also light blue
+      glowColor: [0,0.6, 0.8],  // darker blue highlight
       markers: [
-      // longitude latitude of IEEE student branches
-      { location: [37.7749, -122.4194], size: 0.03 }, // San Francisco, USA
-      { location: [34.0522, -118.2437], size: 0.03 }, // Los Angeles, USA
-      { location: [51.5074, -0.1278], size: 0.03 }, // London, UK
-      { location: [48.8566, 2.3522], size: 0.03 }, // Paris, France
-      { location: [35.6895, 139.6917], size: 0.03 }, // Tokyo, Japan
-      { location: [28.6139, 77.209], size: 0.03 }, // New Delhi, India
-      { location: [55.7558, 37.6173], size: 0.03 }, // Moscow, Russia
-      { location: [-33.8688, 151.2093], size: 0.03 }, // Sydney, Australia
-      { location: [40.7128, -74.006], size: 0.03 }, // New York, USA
-      { location: [19.076, 72.8777], size: 0.03 }, // Mumbai, India
-      { location: [39.9042, 116.4074], size: 0.03 }, // Beijing, China
-      { location: [52.5200, 13.4050], size: 0.03 }, // Berlin, Germany
-      { location: [41.9028, 12.4964], size: 0.03 }, // Rome, Italy
-      { location: [-23.5505, -46.6333], size: 0.03 }, // São Paulo, Brazil
-      { location: [1.3521, 103.8198], size: 0.03 }, // Singapore
+        { location: [37.7749, -122.4194], size: 0.03 }, // San Francisco
+        { location: [34.0522, -118.2437], size: 0.03 }, // Los Angeles
+        { location: [51.5074, -0.1278], size: 0.03 }, // London
+        { location: [48.8566, 2.3522], size: 0.03 }, // Paris
+        { location: [35.6895, 139.6917], size: 0.03 }, // Tokyo
+        { location: [28.6139, 77.209], size: 0.09 }, // New Delhi
+        { location: [55.7558, 37.6173], size: 0.03 }, // Moscow
+        { location: [-33.8688, 151.2093], size: 0.03 }, // Sydney
+        { location: [40.7128, -74.006], size: 0.03 }, // New York
+        { location: [19.076, 72.8777], size: 0.03 }, // Mumbai
+        { location: [39.9042, 116.4074], size: 0.03 }, // Beijing
+        { location: [52.52, 13.4050], size: 0.03 }, // Berlin
+        { location: [41.9028, 12.4964], size: 0.03 }, // Rome
+        { location: [-23.5505, -46.6333], size: 0.03 }, // São Paulo
+        { location: [1.3521, 103.8198], size: 0.03 }, // Singapore
       ],
       onRender: (state) => {
-      // Called on every animation frame.
-      // `state` will be an empty object, return updated params.
       state.phi = phi;
       phi += 0.01;
       },

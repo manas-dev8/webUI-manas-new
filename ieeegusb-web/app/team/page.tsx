@@ -14,9 +14,62 @@ interface TeamMember {
   email: string;
 }
 
+const patMembers: TeamMember[] = [
+  {
+    name: "Prof. Dr. Avadhesh kuamr",
+    role: "Vice chancellor",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Shubhranshu S. Das",
+    role: "Chairperson",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Anurag Kumar Singh",
+    role: "Vice Chairperson",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "aunragkumarsingh@ieee.org"
+  },
+  {
+    name: "Rashi Bajpai",
+    role: "General Sceretary",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Manas Saxsena",
+    role: "Tech Lead (Web Master)",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Siddarth Aggarwal",
+    role: "Treasurer in General",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  // Add 4 more board members here
+];
+
 const boardMembers: TeamMember[] = [
   {
-    name: "Shubhranshu Shekhar Das",
+    name: "Shubhranshu S. Das",
+    role: "n",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    email: "john.doe@ieee.org"
+  },
+  {
+    name: "Shubhranshu S. Das",
     role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
@@ -164,12 +217,17 @@ export default function TeamsPage() {
         <h1 className="text-4xl font-bold text-center text-blue-900 mb-12">Our Team</h1>
         <Tabs defaultValue="board" className="w-auto mx-auto">
           <TabsList className="grid w-auto grid-cols-2 md:grid-cols-5 bg-blue-100 rounded-xl p-1 mb-8">
+          <TabsTrigger value="PAT" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">PATRONS</TabsTrigger>
             <TabsTrigger value="board" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Board</TabsTrigger>
             <TabsTrigger value="executive" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">ExComm</TabsTrigger>
-            <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Computer Society</TabsTrigger>
-            <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Industry Applications Society</TabsTrigger>
-            <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Women in Engineering</TabsTrigger>
+            <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">CS</TabsTrigger>
+            <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">IAS</TabsTrigger>
+            <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">WIE</TabsTrigger>
           </TabsList>
+          <TabsContent value="PAT">
+            <h2 className="text-2xl font-semibold text-blue-900 mb-6">PATRONS</h2>
+            <TeamGrid members={patMembers} />
+          </TabsContent>
           <TabsContent value="board">
             <h2 className="text-2xl font-semibold text-blue-900 mb-6">Board Team</h2>
             <TeamGrid members={boardMembers} />
