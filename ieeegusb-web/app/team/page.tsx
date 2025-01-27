@@ -37,36 +37,36 @@ const boardMembers: TeamMember[] = [
     name: "Shubhranshu S. Dash",
     role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    bio: "As Chairperson of the IEEE Student Branch, Shubhranshu leads the branch by managing operations, fostering collaboration among members, and driving initiatives that encourage technical and professional development. His leadership ensures the organization achieves its goals effectively.",
     email: "shubhranshudash@ieee.org"
   },
   {
     name: "Anurag Kumar Singh",
     role: "Vice Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    bio: "Serving as Vice Chairperson, Anurag plays a pivotal role in supporting the Chairperson and managing branch activities. He actively contributes to planning events and initiatives while ensuring smooth execution to promote member engagement.",
     email: "aunragkumarsingh@ieee.org"
   },
   {
     name: "Rashi Bajpai",
     role: "General Sceretary",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    bio: "As Secretary of the IEEE Student Branch, Rashi is responsible for maintaining accurate records of meetings, correspondence, and events. She ensures clear communication across teams and keeps the branch organized.",
     email: "rashibajpai@ieee.org"
   },
   {
     name: "Manas Saxena",
     role: "Tech Lead (Web Master)",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
+    bio: "Manas, the Technical Lead, specializes in overseeing technical projects and fostering innovation within the branch. He provides technical guidance, organizes workshops, and ensures members stay updated with the latest trends in technology.",
     email: "manassaxena@ieee.org"
   },
   {
-    name: "Siddartha Agrawal",
+    name: "Siddarth Agrawal",
     role: "Treasurer in General",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "siddharthaagrawal07@ieee.org"
+    email: "As Treasurer, Siddharth manages the financial operations of the IEEE Student Branch. He handles budgeting, expense tracking, and funding allocation to support the branch's activities effectively."
   },
   // Add 4 more board members here
 ];
@@ -88,28 +88,28 @@ const subCommunityA: TeamMember[] = [
     name: "Gaurang Pant",
     role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Bob is passionate about IoT and smart home technologies.",
+    bio: "As Chair of the IEEE Computer Society, Gaurang leads the team in promoting advancements in computer science and technology. He organizes events and workshops to enhance members' technical skills and industry knowledge..",
     email: "gaurangpant22@ieee.org"
   },
   {
     name: "Anant Gangwar",
     role: "Vice chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Bob is passionate about IoT and smart home technologies.",
+    bio: "Anant, as Vice Chairperson, supports the Chair in managing society operations. He focuses on creating opportunities for members to explore new technological domains and improve their skills.",
     email: "anantgangwar06@ieee.org"
   },
   {
     name: "Kshitij Bajpai",
     role: "Secretary",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Bob is passionate about IoT and smart home technologies.",
+    bio: "Serving as Secretary, Kshitij is responsible for keeping accurate records and facilitating clear communication within the IEEE Computer Society. His role ensures efficient coordination across all activities.",
     email: "kshitijbajpai@ieee.org"
   },
   {
     name: "Mohammad Sahil",
     role: "Treasurer",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Bob is passionate about IoT and smart home technologies.",
+    bio: "As Treasurer, Mohammad handles the financial operations of the society. He ensures proper budget allocation and funding for events, contributing to the success of various initiatives.",
     email: "ms9811151061@gmail.com"
   },
   // Add 4 more members for Sub-Community A
@@ -120,35 +120,35 @@ const subCommunityB: TeamMember[] = [
     name: "Shubham Pal",
     role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Alice specializes in machine learning and leads the AI research group.",
+    bio: "As Chairperson of IEEE IAS, Shubham oversees the society’s activities, focusing on industrial applications of engineering. His leadership is instrumental in bridging the gap between academics and industry for the members.",
     email: "shubham0568@ieee.org"
   },
   {
     name: "Adarsh Upadhyay",
     role: "Vice Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Alice specializes in machine learning and leads the AI research group.",
+    bio: "Adarsh, as Vice Chairperson, supports the Chairperson in organizing events and projects. He focuses on enhancing member participation and ensuring the society meets its objectives efficiently.",
     email: "adarsh265@ieee.org"
   },
   {
     name: "Urvashi Rawat",
     role: "Secretary",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Alice specializes in machine learning and leads the AI research group.",
+    bio: "As Secretary of IEEE IAS, Urvashi is the backbone of administrative operations. She ensures smooth coordination, documentation, and communication within the society.",
     email: "urvashirawat@ieee.org"
   },
   {
     name: "Ashish Kumar",
     role: "Web Master",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Alice specializes in machine learning and leads the AI research group.",
+    bio: "Ashish, the Web Master of IEEE IAS, is responsible for guiding technical initiatives and projects. He organizes technical workshops, webinars, and events to inspire innovation and learning among members.",
     email: "ashishbhardwaj@ieee.org"
   },
   {
     name: "Anant Chaubey",
     role: "Treasurer",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Alice specializes in machine learning and leads the AI research group.",
+    bio: "Anant, as Treasurer, manages the financial aspects of IEEE IAS. He oversees budgeting, fundraising, and allocation of resources to ensure the smooth execution of society events.",
     email: "anant92@ieee.org"
   },
   // Add 4 more members for Sub-Community B
@@ -159,35 +159,35 @@ const subCommunityC: TeamMember[] = [
     name: "Monica Singh",
     role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    bio: "Monica, as Chairperson, leads the IEEE WIE group with a vision to empower women in engineering and technology. She organizes initiatives to inspire and support women pursuing technical careers.",
     email: "mona_13@ieee.org"
   },
   {
     name: "Yashi Katiyar",
     role: "Vice Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    bio: "Yashi serves as Vice Chair, working closely with the Chairperson to manage operations and promote the growth of WIE. She helps in strategizing and implementing impactful programs for members.",
     email: "yashikatiyar@ieee.org"
   },
   {
     name: "Tanisha Bhatnagar",
     role: "Secretary",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    bio: "As Secretary of IEEE WIE, Tanisha plays a key role in maintaining communication and organizing events. She ensures accurate documentation and smooth operations within the team.",
     email: "tanishabhatnagar2703@ieee.org"
   },
   {
     name: "Anjali Yadav",
     role: "Treasurer",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    bio: "Anjali, as Treasurer, manages the financial aspects of WIE. She ensures efficient use of resources to support the society’s initiatives and events.",
     email: "anjaliyadav@ieee.org"
   },
   {
     name: "Arya Amoriya",
     role: "Outreach Lead",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    bio: "As Outreach Lead, Arya is responsible for building connections with external organizations and promoting WIE’s activities. She ensures the group’s visibility and engagement within the community.",
     email: "aryaamoriya@ieee.org"
   },
   // Add 4 more members for Sub-Community C
