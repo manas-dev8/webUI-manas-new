@@ -17,63 +17,28 @@ interface TeamMember {
 const patMembers: TeamMember[] = [
   {
     name: "Prof. Dr. Avadhesh kuamr",
-    role: "Vice",
+    role: "Vice-Chair UP Section/Pro Vice Chancellor",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
     email: "john.doe@ieee.org"
   },
   {
-    name: "Shubhranshu S. Das",
-    role: "Chairperson",
+    name: "Dr. Aanjey Mani Tripathi",
+    role: "IEEE Counselor",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
     email: "john.doe@ieee.org"
   },
-  {
-    name: "Anurag Kumar Singh",
-    role: "Vice Chairperson",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "aunragkumarsingh@ieee.org"
-  },
-  {
-    name: "Rashi Bajpai",
-    role: "General Sceretary",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
-  },
-  {
-    name: "Manas Saxsena",
-    role: "Tech Lead (Web Master)",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
-  },
-  {
-    name: "Siddarth Aggarwal",
-    role: "Treasurer in General",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
-  },
-  // Add 4 more board members here
 ];
 
 const boardMembers: TeamMember[] = [
+  
   {
-    name: "Shubhranshu S. Das",
-    role: "n",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
-  },
-  {
-    name: "Shubhranshu S. Das",
+    name: "Shubhranshu S. Dash",
     role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
+    email: "shubhranshudash@ieee.org"
   },
   {
     name: "Anurag Kumar Singh",
@@ -87,21 +52,21 @@ const boardMembers: TeamMember[] = [
     role: "General Sceretary",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
+    email: "rashibajpai@ieee.org"
   },
   {
-    name: "Manas Saxsena",
+    name: "Manas Saxena",
     role: "Tech Lead (Web Master)",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
+    email: "manassaxena@ieee.org"
   },
   {
-    name: "Siddarth Aggarwal",
+    name: "Siddartha Agrawal",
     role: "Treasurer in General",
     image: "/placeholder.svg?height=300&width=300",
     bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
+    email: "siddharthaagrawal07@ieee.org"
   },
   // Add 4 more board members here
 ];
@@ -118,34 +83,112 @@ const executiveCommittee: TeamMember[] = [
 ];
 
 const subCommunityA: TeamMember[] = [
+  
   {
-    name: "Alice Johnson",
-    role: "Sub-Community A Lead",
+    name: "Gaurang Pant",
+    role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Alice specializes in machine learning and leads the AI research group.",
-    email: "alice.johnson@ieee.org"
+    bio: "Bob is passionate about IoT and smart home technologies.",
+    email: "gaurangpant22@ieee.org"
+  },
+  {
+    name: "Anant Gangwar",
+    role: "Vice chairperson",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Bob is passionate about IoT and smart home technologies.",
+    email: "anantgangwar06@ieee.org"
+  },
+  {
+    name: "Kshitij Bajpai",
+    role: "Secretary",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Bob is passionate about IoT and smart home technologies.",
+    email: "kshitijbajpai@ieee.org"
+  },
+  {
+    name: "Mohammad Sahil",
+    role: "Treasurer",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Bob is passionate about IoT and smart home technologies.",
+    email: "ms9811151061@gmail.com"
   },
   // Add 4 more members for Sub-Community A
 ];
 
 const subCommunityB: TeamMember[] = [
   {
-    name: "Bob Williams",
-    role: "Sub-Community B Lead",
+    name: "Shubham Pal",
+    role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Bob is passionate about IoT and smart home technologies.",
-    email: "bob.williams@ieee.org"
+    bio: "Alice specializes in machine learning and leads the AI research group.",
+    email: "shubham0568@ieee.org"
+  },
+  {
+    name: "Adarsh Upadhyay",
+    role: "Vice Chairperson",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Alice specializes in machine learning and leads the AI research group.",
+    email: "adarsh265@ieee.org"
+  },
+  {
+    name: "Urvashi Rawat",
+    role: "Secretary",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Alice specializes in machine learning and leads the AI research group.",
+    email: "urvashirawat@ieee.org"
+  },
+  {
+    name: "Ashish Kumar",
+    role: "Web Master",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Alice specializes in machine learning and leads the AI research group.",
+    email: "ashishbhardwaj@ieee.org"
+  },
+  {
+    name: "Anant Chaubey",
+    role: "Treasurer",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Alice specializes in machine learning and leads the AI research group.",
+    email: "anant92@ieee.org"
   },
   // Add 4 more members for Sub-Community B
 ];
 
 const subCommunityC: TeamMember[] = [
   {
-    name: "Carol Davis",
-    role: "Sub-Community C Lead",
+    name: "Monica Singh",
+    role: "Chairperson",
     image: "/placeholder.svg?height=300&width=300",
     bio: "Carol leads the robotics team and organizes annual robotics competitions.",
-    email: "carol.davis@ieee.org"
+    email: "mona_13@ieee.org"
+  },
+  {
+    name: "Yashi Katiyar",
+    role: "Vice Chairperson",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    email: "yashikatiyar@ieee.org"
+  },
+  {
+    name: "Tanisha Bhatnagar",
+    role: "Secretary",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    email: "tanishabhatnagar2703@ieee.org"
+  },
+  {
+    name: "Anjali Yadav",
+    role: "Treasurer",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    email: "anjaliyadav@ieee.org"
+  },
+  {
+    name: "Arya Amoriya",
+    role: "Outreach Lead",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Carol leads the robotics team and organizes annual robotics competitions.",
+    email: "aryaamoriya@ieee.org"
   },
   // Add 4 more members for Sub-Community C
 ];
