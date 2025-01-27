@@ -15,14 +15,14 @@ export default function FeaturesSectionDemo() {
         "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
+        "col-span-1 lg:col-span-4",
     },
     {
       title: "Capture pictures with AI",
       description:
         "Capture stunning photos effortlessly using our advanced AI technology.",
       skeleton: <SkeletonTwo />,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
+      className: " col-span-1 lg:col-span-2 ",
     },
     {
       title: "Watch our AICSSYC 2024 HIGLIGHTS",
@@ -30,18 +30,18 @@ export default function FeaturesSectionDemo() {
         "Click here to watch the highlights of AICSSYC 2024, the biggest national congress on higlights.",
       skeleton: <SkeletonThree />,
       className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
+        "col-span-1 lg:col-span-3",
     },
     {
       title: "Deploy in seconds",
       description:
         "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
+      className: "col-span-1 lg:col-span-3",
     },
   ];
   return (
-    <div className="relative z-20 py-10 bg-zinc-100 lg:py-40 max-w-7xl mx-auto">
+    <div className="relative z-20 py-10 bg-zinc-100 lg:py-40 mx-5">
       <div className="px-8">
         <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
           Packed with thousands of Oppurtunities
@@ -54,7 +54,7 @@ export default function FeaturesSectionDemo() {
       </div>
 
       <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
+        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 rounded-md ">
           {features.map((feature) => (
             <FeatureCard key={feature.title} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
@@ -188,7 +188,7 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-white flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -210,7 +210,7 @@ export const SkeletonTwo = () => {
             variants={imageVariants}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800  flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -232,7 +232,7 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -254,7 +254,7 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -275,7 +275,7 @@ export const SkeletonTwo = () => {
 
 export const SkeletonFour = () => {
   return (
-    <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10">
+    <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10 ">
       <Globe className="absolute -right-10 md:-right-10 -bottom-80 md:-bottom-72" />
     </div>
   );
